@@ -1,0 +1,51 @@
+{
+    "name": "officialdigtalgravity/dg-page-manager",
+    "description": "",
+    "keywords": [
+        "officialdigtalgravity",
+        "dg-page-manager"
+    ],
+    "homepage": "https://github.com/officialdigtalgravity/dg-page-manager",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bilal",
+            "email": "bilalmalik531996@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "^2.9 || ^3.0",
+        "optimistdigital/nova-locale-field": "^2.0.1",
+        "doctrine/dbal": "^2.9"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Officialdigtalgravity\\DgPageManager\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+          ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Officialdigtalgravity\\DgPageManager\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Officialdigtalgravity\\DgPageManager\\ToolServiceProvider"
+            ]
+        }
+    }
+}
