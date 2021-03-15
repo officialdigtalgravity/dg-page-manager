@@ -47,5 +47,7 @@
                 "Officialdigtalgravity\\DgPageManager\\ToolServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
